@@ -1,4 +1,4 @@
-divbody{
+#content {
   padding: 10px;
   margin-bottom: 10px;
   text-indent: 7px;
@@ -8,7 +8,7 @@ divbody{
   background-color: cornflowerblue;
 }
 
-heading h1 {
+#content h1 {
   width: 100%;
   font-size: 300px;
   font-family: sans-serif;
