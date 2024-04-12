@@ -6,7 +6,8 @@
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   border: solid 3px black;
   background-color: cornflowerblue;
-  margin: 0 auto;
+  text-align: center; /* Added semicolon */
+  margin: 0 auto; /* Added semicolon */
 }
 
 #content h1 {
