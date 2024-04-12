@@ -17,3 +17,8 @@
   background-color: dodgerblue;
   border: solid 3px black;
 }
+
+.computer {
+  width: 50%;
+  height: auto;
+}
