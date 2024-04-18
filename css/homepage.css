@@ -1,6 +1,101 @@
 /* this css file will only style the homepage of our site */
 
-.cat-photo {
-  margin: 10px;
-  max-width: 500px;
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f8ff; /* Light blue background */
+  color: #333; /* Dark gray text color */
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #87ceeb; /* Sky blue header background */
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-family: 'Comic Sans MS', cursive;
+  font-size: 36px;
+  color: #fff; /* White header text color */
+  margin: 0;
+  text-shadow: none; /* Remove text shadow */
+  display: inline-block;
+  padding: 5px 10px;
+  border: none; /* Remove border */
+}
+
+h1 span {
+  text-decoration: underline;
+  text-decoration-color: #000; /* Black underline */
+  text-decoration-thickness: 2px;
+}
+
+main {
+  padding: 20px;
+}
+
+#introduction {
+  border: none; /* Remove border */
+  padding: 20px;
+  background-color: #fff; /* White background */
+  text-align: center; /* Center the content */
+}
+
+#introduction h2 {
+  color: #4682b4; /* Steel blue heading color */
+  font-size: 24px;
+  margin-top: 0;
+  text-decoration: underline; /* Underline the heading */
+}
+
+#introduction p {
+  line-height: 1.6;
+  font-family: 'Arial', sans-serif; /* Different font for the text */
+  font-weight: bold; /* Bold font weight */
+  color: #4682b4; /* Steel blue text color */
+  text-decoration: underline; /* Underline the text */
+}
+
+#my-portrait {
+  max-width: 300px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+#labs-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#labs-title {
+  color: #191970; /* Midnight blue title color */
+  font-family: 'Arial', sans-serif; /* Different font for the title */
+  font-size: 24px;
+  display: inline-block;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+  text-decoration: underline; /* Underline the title */
+}
+
+#labs-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#labs-container ul li {
+  margin-bottom: 10px;
+  color: #191970; /* Midnight blue text color */
+  font-weight: bold; /* Bold font weight */
+}
+
+#labs-container ul li a {
+  text-decoration: underline;
+  color: #191970; /* Midnight blue link color */
+  font-size: 18px;
+}
+
+#labs-container ul li a:hover {
+  color: #4682b4; /* Steel blue hover color */
 }
