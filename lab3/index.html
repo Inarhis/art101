@@ -8,6 +8,31 @@
     <link rel="stylesheet" type="text/css" href="../css/site.css">
     <link rel="stylesheet" type="text/css" href="css/lab.css">
 
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+            align-items: center;
+        }
+
+        .image-container {
+            text-align: center;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            width: 600px;
+            height: auto;
+            margin-bottom: 30px;
+        }
+
+        .image-container p {
+            margin-top: 0;
+            font-size: 22px;
+        }
+    </style>
+
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
     <script type="text/javascript" src="./js/lab.js" defer></script>
@@ -19,30 +44,54 @@
 
             <div class="minor-section">
                 <h2>Challenge</h2>
-                <p>The challenge of this lab was to reformat our own websites homepage and stylize it using CSS.
+                <p>The challenge of this lab was to reformat our own website's homepage and stylize it using CSS.
                     I had to edit the HTML files for my homepage and for my lab 3.</p>
             </div>
 
             <div class="minor-section">
                 <h2>Problems</h2>
-                <p>Some problems I had for this lab was struggling to upload my picture to my website.
-                    This was becuase I accidentally put my HTML file in my CSS folder. So, I moved the
-                HTML file outside of the CSS folder and the image worked.</p>
+                <p>Some problems I had for this lab were struggling to upload my picture to my website.
+                    This was because I accidentally put my HTML file in my CSS folder. So, I moved the
+                    HTML file outside of the CSS folder and the image worked.</p>
             </div>
 
             <div class="minor-section">
                 <h2>Reflection</h2>
                 <p>Overall, I feel like I struggled a lot with this project because I was very confused on
-                    how to format both HTMLS correctly. The TA helped me a lot with my errors and I believe
-                    I did well on this assignment.
-                </p>
+                    how to format both HTMLs correctly. The TA helped me a lot with my errors and I believe
+                    I did well on this assignment.</p>
             </div>
 
             <div class="minor-section">
                 <h2>Results</h2>
-                <p>Below is the file structure and screenshots of my HTML code and how it looks on the browser.</p>
-                <img src="img/File_Structure.png" width="650">
-                <p>Additional text below the image.</p>
+
+                <div class="image-container">
+                    <img src="img/file_structure.png" width="600">
+                    <p>Below is the file structure and screenshots of my HTML code and how it looks on the browser.</p>
+                </div>
+
+                <div class="grid-container">
+                    <div class="image-container">
+                        <img src="img/art_101_homepage.png" width="600">
+                        <p>Here is my homepage HTML code.</p>
+                    </div>
+
+                    <div class="image-container">
+                        <img src="img/art_101_browser.png" width="600">
+                        <p>Here is how it appears in the Chrome browser.</p>
+                    </div>
+
+                    <div class="image-container">
+                        <img src="img/lab_3.png" width="600">
+                        <p>Here is my Lab 3 HTML code.</p>
+                    </div>
+
+                    <div class="image-container">
+                        <img src="img/lab_3_browser.png" width="600">
+                        <p>Here is how it appears in the Chrome browser.</p>
+                    </div>
+                </div>
+
                 <div id="output"></div>
             </div>
         </section>
