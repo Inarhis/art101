@@ -1,19 +1,18 @@
-<style>
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f0f8ff; /* Light blue background */
     color: #333; /* Dark gray text color */
     margin: 0;
     padding: 0;
-}
-
-header {
+  }
+  
+  header {
     background-color: #87ceeb; /* Sky blue header background */
     text-align: center;
     padding: 20px;
-}
-
-h1.homepage-title {
+  }
+  
+  h1.homepage-title {
     font-family: 'Marker Felt', fantasy; /* Fantasy font */
     font-weight: bold;
     font-size: 48px; /* Bigger font size */
@@ -24,47 +23,47 @@ h1.homepage-title {
     display: inline-block;
     padding: 5px 10px;
     border-radius: 10px;
-}
-
-main {
+  }
+  
+  main {
     padding: 20px;
-}
-
-#introduction {
+  }
+  
+  #introduction {
     border: 2px solid #87ceeb; /* Light blue border */
     border-radius: 10px;
     padding: 20px;
     background-color: #fff; /* White background */
     text-align: center; /* Center the content */
-}
-
-#introduction h2 {
+  }
+  
+  #introduction h2 {
     color: #4682b4; /* Steel blue heading color */
     font-size: 24px;
     margin-top: 0;
     text-decoration: underline; /* Add underline */
-}
-
-#introduction p {
+  }
+  
+  #introduction p {
     line-height: 1.6;
     font-family: 'Arial', sans-serif; /* Different font for the text */
     font-weight: bold; /* Bold font weight */
     color: #4682b4; /* Steel blue text color */
-}
-
-#my-portrait {
+  }
+  
+  #my-portrait {
     max-width: 300px;
     display: block;
     margin: 0 auto;
     border-radius: 10px;
-}
-
-#labs-container {
+  }
+  
+  #labs-container {
     text-align: center;
     margin-top: 20px;
-}
-
-#labs-title {
+  }
+  
+  #labs-title {
     color: #4682b4; /* Steel blue title color */
     font-family: 'Comic Sans MS', cursive;
     font-size: 24px;
@@ -73,26 +72,25 @@ main {
     border: 2px solid #4682b4; /* Steel blue border */
     border-radius: 10px;
     margin-bottom: 20px;
-}
-
-#labs-container ul {
+  }
+  
+  #labs-container ul {
     list-style-type: none;
     padding: 0;
-}
-
-#labs-container ul li {
+  }
+  
+  #labs-container ul li {
     margin-bottom: 10px;
     color: #4682b4; /* Steel blue text color */
     font-weight: bold; /* Bold font weight */
-}
-
-#labs-container ul li a {
+  }
+  
+  #labs-container ul li a {
     text-decoration: underline; /* Add underline */
     color: #4682b4; /* Steel blue link color */
     font-size: 18px;
-}
-
-#labs-container ul li a:hover {
+  }
+  
+  #labs-container ul li a:hover {
     color: #87ceeb; /* Light blue hover color */
-}
-</style>
+  }
