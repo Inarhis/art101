@@ -1,36 +1,98 @@
-/* we can use a single css file to style all the files in our wwebsite */
-
-/* you can pick your own background colors, text colors, and fonts */
-
-/* we can select an html element tag, in this case "body" will apply to the whole document */
+<style>
 body {
-  background-color: #50808E;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff; /* Light blue background */
+    color: #333; /* Dark gray text color */
+    margin: 0;
+    padding: 0;
 }
 
-/* we can have rules apply to multiple elements at the same time with commas */
-h1,h2,h3 {
-  font-family: sans-serif;
+header {
+    background-color: #87ceeb; /* Sky blue header background */
+    text-align: center;
+    padding: 20px;
 }
 
-/* and we can have rules that overlap other rules, both take effect */
-h1 {
-  letter-spacing: 5px;
-  word-spacing: 5px;
-  font-size: 200%;
+h1.homepage-title {
+    font-family: 'Marker Felt', fantasy; /* Fantasy font */
+    font-weight: bold;
+    font-size: 48px; /* Bigger font size */
+    color: #fff; /* White header text color */
+    margin: 0;
+    text-shadow: 1px 1px 1px #000; /* Black text shadow */
+    -webkit-text-stroke: 1px black;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 10px;
 }
 
-/* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
-#content {
-  margin: 10px;
-  padding: 10px;
-  border: solid 1px #888;
-  background-color: #84B59F;
+main {
+    padding: 20px;
 }
 
-/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
-.minor-section {
-  padding: 10px;
-  margin-bottom: 10px;
-  border: solid 1px #888;
-  background-color: #A3C9A8;
+#introduction {
+    border: 2px solid #87ceeb; /* Light blue border */
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff; /* White background */
+    text-align: center; /* Center the content */
 }
+
+#introduction h2 {
+    color: #4682b4; /* Steel blue heading color */
+    font-size: 24px;
+    margin-top: 0;
+    text-decoration: underline; /* Add underline */
+}
+
+#introduction p {
+    line-height: 1.6;
+    font-family: 'Arial', sans-serif; /* Different font for the text */
+    font-weight: bold; /* Bold font weight */
+    color: #4682b4; /* Steel blue text color */
+}
+
+#my-portrait {
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+#labs-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#labs-title {
+    color: #4682b4; /* Steel blue title color */
+    font-family: 'Comic Sans MS', cursive;
+    font-size: 24px;
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid #4682b4; /* Steel blue border */
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#labs-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#labs-container ul li {
+    margin-bottom: 10px;
+    color: #4682b4; /* Steel blue text color */
+    font-weight: bold; /* Bold font weight */
+}
+
+#labs-container ul li a {
+    text-decoration: underline; /* Add underline */
+    color: #4682b4; /* Steel blue link color */
+    font-size: 18px;
+}
+
+#labs-container ul li a:hover {
+    color: #87ceeb; /* Light blue hover color */
+}
+</style>
