@@ -1,4 +1,3 @@
-/* Existing CSS styles */
 .grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -15,56 +14,55 @@
   width: 600px;
   height: auto;
   margin-bottom: 30px;
-  border-radius: 20px; /* Add rounded corners to images */
+  border-radius: 20px;
 }
 
 .image-container p {
   margin-top: 0;
   font-size: 18px;
-  color: #333; /* Darken text color */
+  color: #333;
 }
 
-/* New CSS styles */
 body {
-  background-color: #c0d9e6; /* Light blue background */
-  font-family: 'Comic Sans MS', cursive, sans-serif; /* Change font to Comic Sans MS */
-  text-align: center; /* Center align all text */
-  color: black; /* Change default font color to black */
+  background-color: #c0d9e6;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  text-align: center;
+  color: black;
 }
 
 h1 {
-  margin-bottom: 30px; /* Add more space below the title */
-  font-size: 48px; /* Increase font size */
-  color: #11549b; /* Change title color to royal blue */
-  font-family: 'Fantasy', sans-serif; /* Change font to fantasy */
+  margin-bottom: 30px;
+  font-size: 48px;
+  color: #11549b;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
 }
 
 h2 {
-  text-decoration: underline; /* Underline all h2 titles */
-  font-size: 24px; /* Increase font size for h2 */
-  font-family: 'Fantasy', sans-serif; /* Change font to fantasy */
+  text-decoration: underline;
+  font-size: 24px;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
 }
 
 .minor-section {
-  background-color: rgba(239, 238, 238, 0.924); /* Change background color to white */
+  background-color: rgba(239, 238, 238, 0.924);
   padding: 20px;
   border-radius: 10px;
-  margin-bottom: 20px; /* Add space between sections */
+  margin-bottom: 20px;
 }
 
 .minor-section h2 {
-  color: #4682b4; /* Change heading color to steel blue */
-  font-family: 'Fantasy', sans-serif; /* Change font to fantasy */
+  color: #4682b4;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
 }
 
 .fun-text {
   font-size: 24px;
-  color: #87cefa; /* Light sky blue text color */
-  margin-top: 40px; /* Add space above fun text */
-  animation: bounce 1s infinite alternate; /* Add bounce animation */
+  color: #87cefa;
+  margin-top: 40px;
+  animation: bounce 1s infinite alternate;
 }
 
 @keyframes bounce {
   0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-20px); } /* Adjust bounce height */
+  50% { transform: translateY(-20px); }
 }
