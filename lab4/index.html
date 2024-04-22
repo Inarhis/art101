@@ -8,13 +8,32 @@
     <link rel="stylesheet" type="text/css" href="css/lab.css">
     <style>
         body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
             text-align: center;
+            padding: 20px;
+            margin: 0;
+            background-color: #FFCCCC;
+        }
+
+        h1 {
+            font-size: 18px;
+            text-decoration: underline;
+        }
+
+        h2 {
+            font-size: 18px;
+            text-decoration: underline;
         }
 
         .minor-section {
             display: inline-block;
             text-align: left;
             margin: 20px auto;
+            border: 2px solid black;
+            padding: 10px;
+            width: 90%;
+            max-width: 800px;
+            background-color: #ffeded;
         }
 
         .image-container {
@@ -22,11 +41,32 @@
             vertical-align: top;
             margin: 20px;
             text-align: center;
+            border: 2px solid black;
+            padding: 10px;
+            background-color: #FF9999;
         }
 
         .image-container img {
             width: 300px;
             height: auto;
+            border: 1px solid black;
+        }
+
+        h1, h2 {
+            font-size: 36px;
+        }
+
+        h3, p, pre, code {
+            font-size: 18px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .results-code {
+            width: calc(100% - 40px);
+            overflow-x: auto;
+            margin: 0 auto;
+            text-align: left;
         }
     </style>
 </head>
@@ -37,16 +77,12 @@
 
             <div class="minor-section">
                 <h2>Challenge</h2>
-                <p>The challenge of this lab was learning how to operate JavaScript. While it was not too
-                     hard to manage, I had trouble creating the code and with the indentation. I also had 
-                     trouble linking and getting my images to work in the HTML code.</p>
+                <p>The challenge of this lab was learning how to operate JavaScript. While it was not too hard to manage, I had trouble creating the code and with the indentation. I also had trouble linking and getting my images to work in the HTML code.</p>
             </div>
 
             <div class="minor-section">
                 <h2>Problems</h2>
-                <p>Some problems I had for this lab were seeing if my images would work on the website. For some reason, 
-                    my images would work if I command-o'd the code into the Chrome browser, but when I uploaded the code 
-                    to GitHub, some of my images would not load. To solve this, I simply renamed my images and they showed up.</p>
+                <p>Some problems I had for this lab were seeing if my images would work on the website. For some reason, my images would work if I command-o'd the code into the Chrome browser, but when I uploaded the code to GitHub, some of my images would not load. To solve this, I simply renamed my images and they showed up.</p>
             </div>
 
             <div class="minor-section">
@@ -59,7 +95,7 @@
 
                 <div class="image-container">
                     <h3>Pseudocode for an Everyday Task</h3>
-                    <pre><code>
+                    <pre class="results-code"><code>
                         // Pseudocode for an everyday task
                         // Task: Serving a bowl of salsa
                         1. Gather Ingredients
@@ -95,7 +131,7 @@
 
                 <div class="image-container">
                     <h3>Pseudocode for a Simple Computer Game (Checkers)</h3>
-                    <pre><code>
+                    <pre class="results-code"><code>
                         // Pseudocode for a simple computer game
                         // Task: Creating a Checkers Game
                         1. Set up the game board
