@@ -1,9 +1,22 @@
-/* Here we can set styles for this lab page that we don't want to effect others pages */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
 
-/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
-.minor-section {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: solid 1px #888;
-    background-color: #DDD8C4;
-  }
+h1, h2, h3, p, pre, code {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.image-container {
+  max-width: 400px;
+  margin: 0 auto 20px auto;
+  text-align: center;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
