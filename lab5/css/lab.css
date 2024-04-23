@@ -1,9 +1,42 @@
-/* Here we can set styles for this lab page that we don't want to effect others pages */
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background-color: #d9eefc;
+  color: #333;
+  text-align: center;
+}
 
-/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+h1, h2, h3 {
+  color: #1e408a;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  text-decoration: underline;
+}
+
+h3#output-title {
+  text-decoration: none;
+}
+
 .minor-section {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: solid 1px #888;
-    background-color: #DDD8C4;
-  }
+  background-color: #fdfbfb;
+  padding: 20px;
+  margin: 0 auto 10px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid black;
+  max-width: 600px;
+  text-align: center;
+}
+
+.car-image {
+  margin-top: 20px;
+}
+
+.car-image img {
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 2px solid black;
+  display: block;
+  margin: 0 auto;
+}
