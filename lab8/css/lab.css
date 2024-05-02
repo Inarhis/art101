@@ -1,0 +1,69 @@
+/* CSS for Lab 6 - Arrays and Objects */
+
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background-color: #7fe3ff; /* Light blue background */
+  margin: 0;
+  padding: 0;
+}
+
+#content {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff; /* White background */
+  border: 2px solid #000000; /* Black border */
+  border-radius: 10px;
+  text-align: center; /* Center align text */
+}
+
+h1, h2 {
+  color: #000000; /* Black text */
+  text-align: center;
+  border: 2px solid #000000; /* Black border */
+  padding: 5px 10px; /* Add padding */
+  margin-bottom: 10px; /* Reduced margin */
+  display: inline-block; /* Display titles inline */
+  background-color: #ffffff; /* White background inside title borders */
+}
+
+.minor-section {
+  margin-bottom: 20px;
+  border: 2px solid #000000; /* Black border */
+  background-color: #add8e6; /* Baby blue background */
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center; /* Center align text */
+}
+
+p {
+  line-height: 1.5;
+  color: #000000; /* Black text */
+  text-align: center; /* Center align text */
+  margin-top: 5px; /* Reduced margin */
+}
+
+#output {
+  margin: 10px auto; /* Center the output */
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center; /* Center align text */
+}
+
+#output h2 {
+  text-decoration: underline; /* Add underline to h2 elements inside #output */
+}
+
+#transportation {
+  margin-top: 5px; /* Reduced margin */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 20px;
+  border: 2px solid #000000; /* Black border */
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
