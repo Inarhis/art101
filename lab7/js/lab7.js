@@ -28,3 +28,16 @@ function sortUserName() {
 
 // output
 document.writeln("Oh hey I fixed your name: ", sortUserName(), "</br>");
+
+// Custom sorting function to sort lowercase and uppercase letters together
+function sortUserName(userName) {
+    var sortedName = userName.split('').sort(function(a, b) {
+        return a.toLowerCase().localeCompare(b.toLowerCase());
+    }).join('');
+    
+    return sortedName;
+}
+
+// Example usage
+var userInput = window.prompt("Please enter your name:");
+document.writeln("Your sorted name is: " + sortUserName(userInput));
