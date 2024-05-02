@@ -5,6 +5,28 @@
 */
 
 // sortUserName - a function that takes user input and sorts the letters
+// of their name, ignoring spaces
+
+function sortUserName(userName) {
+    // Remove spaces from the user's name
+    userName = userName.replace(/\s+/g, '');
+    
+    // Sort the letters of the name
+    var sortedName = userName.split('').sort(function(a, b) {
+        return a.toLowerCase().localeCompare(b.toLowerCase());
+    }).join('');
+    
+    return sortedName;
+}
+
+// Output the sorted name
+var userInput = window.prompt("Please enter your name:");
+document.writeln("Your sorted name is:" + sortUserName(userInput));
+
+// Output a line break
+document.write("<br>");
+
+// sortUserName - a function that takes user input and sorts the letters
 // of their name
 
 function sortUserName() {
