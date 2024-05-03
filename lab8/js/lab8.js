@@ -33,18 +33,8 @@ console.log("Cubed numbers:", cubedNumbers);
 var doubledNumbers = numbers.map(double);
 console.log("Doubled numbers:", doubledNumbers);
 
-// Define the correct answer
-var correctAnswer = "B) Paris";
+// Your map results data
+ var mapResults = "Your map results here";
 
-// Add click event listeners to each choice
-$("#choices li").click(function() {
-    // Get the text of the clicked choice
-    var selectedAnswer = $(this).text();
-
-    // Check if the selected answer is correct
-    if (selectedAnswer === correctAnswer) {
-        $("#output").text("Correct!");
-    } else {
-        $("#output").text("Wrong! The correct answer is " + correctAnswer);
-    }
-});
+// Use jQuery to select the element by its ID and set the HTML content
+ $("#output").html(mapResults);
