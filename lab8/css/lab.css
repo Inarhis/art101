@@ -33,7 +33,7 @@ h2 {
 .minor-section {
   margin-bottom: 20px;
   border: 2px solid #000000; /* Black border */
-  background-color: #d8bfd8; /* Light purple background */
+  background-color: #C1E1C1; /* Light green background */
   padding: 20px;
   border-radius: 10px;
 }
@@ -52,24 +52,4 @@ p {
 
 #output h2 {
   text-decoration: underline; /* Add underline to h2 elements inside #output */
-}
-
-.fun-text {
-  font-size: 18px;
-  font-weight: bold;
-  color: #ff4500; /* Orange-red text color */
-  text-align: center;
-  margin-top: 20px;
-}
-
-.fun-section {
-  background-color: #add8e6; /* Light blue background */
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-}
-
-.fun-section p {
-  font-size: 16px;
-  color: #00008b; /* Dark blue text color */
 }

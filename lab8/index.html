@@ -5,7 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="css/lab.css">
-    <script src="js/lab8.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/lab.js" defer></script>
 </head>
 <body>
     <main id="content">
@@ -37,7 +38,40 @@
                 <p><u>Evenness of Array</u>: [false, true, false, true, false]</p>
                 <p><u>Square Roots</u>: [1, 1.4142135623730951, 1.7320508075688772, 2, 2.23606797749979]</p>
             </div>
+            
+            <!-- Task X: Bonus -->
+            <div class="minor-section">
+                <h2>Task X: Bonus!</h2>
+                <p>Multiple Choice Question:</p>
+                <h3>What is the capital of France?</h3>
+                <ul id="choices">
+                    <li>A) London</li>
+                    <li>B) Paris</li>
+                    <li>C) Rome</li>
+                    <li>D) Berlin</li>
+                </ul>
+                <div id="output"></div> <!-- Output will be displayed here -->
+            </div>
         </section>
     </main>
+    <script>
+        $(document).ready(function() {
+            // Define the correct answer
+            var correctAnswer = "B) Paris";
+
+            // Add click event listeners to each choice
+            $("#choices li").click(function() {
+                // Get the text of the clicked choice
+                var selectedAnswer = $(this).text();
+
+                // Check if the selected answer is correct
+                if (selectedAnswer === correctAnswer) {
+                    $("#output").text("Correct!");
+                } else {
+                    $("#output").text("Wrong! The correct answer is " + correctAnswer);
+                }
+            });
+        });
+    </script>
 </body>
 </html>
