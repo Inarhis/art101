@@ -1,8 +1,6 @@
-/* Resetting default styles and applying custom styles */
-
 body {
   font-family: 'Comic Sans MS', cursive, sans-serif;
-  background-color: #f5f5f5; /* Light grey background */
+  background-color: #e0ddff; /* Light grey background */
   margin: 0;
   padding: 0;
 }
@@ -11,7 +9,7 @@ body {
   max-width: 800px;
   margin: 20px auto;
   padding: 20px;
-  background-color: #e8f4ea; /* Green background */
+  background-color: #f0f5ff; /* Green background */
   border: 2px solid #000000; /* Black border */
   border-radius: 10px;
 }
@@ -31,7 +29,7 @@ h2 {
 .minor-section {
   margin-bottom: 20px;
   border: 2px solid #000000; /* Black border */
-  background-color: #c1e1c1; /* Light green background */
+  background-color: #b0c6ff; /* Light green background */
   padding: 20px;
   border-radius: 10px;
 }
@@ -50,4 +48,11 @@ p {
 
 #output h2 {
   text-decoration: underline; /* Add underline to h2 elements inside #output */
+}
+
+.special {
+  background-color: lavender; /* Light purple background */
+  border: dotted 5px red; /* Red dotted border */
+  color: #800080; /* Purple text */
+  font-weight: bold; /* Bold font */
 }
