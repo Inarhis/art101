@@ -1,3 +1,5 @@
+/* lab9.css */
+
 body {
   font-family: 'Comic Sans MS', cursive, sans-serif;
   background-color: #e0ddff; /* Light grey background */
@@ -9,7 +11,7 @@ body {
   max-width: 800px;
   margin: 20px auto;
   padding: 20px;
-  background-color: #f0f5ff; /* Green background */
+  background-color: #f0f5ff;
   border: 2px solid #000000; /* Black border */
   border-radius: 10px;
 }
@@ -51,7 +53,28 @@ p {
 }
 
 .special {
-  background-color: rgb(255, 255, 255);
-  color: #ffffff;
+  background-color:#f0f5ff;
+  color:#b0c6ff;
   font-weight: bold;
+}
+
+/* Add borders to each section */
+#challenge,
+#problems,
+#reflection,
+#results {
+  border: 2px solid #000000; /* Black border */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px; /* Add padding inside each section */
+  margin-bottom: 20px; /* Add margin at the bottom of each section */
+}
+
+/* Center the "Make Special" button */
+#makeSpecialContainer {
+  text-align: center; /* Center the content horizontally */
+  margin: 20px auto; /* Center the container horizontally */
+}
+
+#makeSpecialButton {
+  display: inline-block; /* Ensure button behaves as a block element */
 }

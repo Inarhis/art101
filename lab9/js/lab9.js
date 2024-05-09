@@ -28,7 +28,17 @@ $(document).ready(function() {
     });
 
     $("#button-results").click(function() {
+        // Toggle the "special" class on the results section
         $("#results").toggleClass("special");
+
+        // Check if the "special" class is added to the results section
+        if ($("#results").hasClass("special")) {
+            // If it is, append an image to the results section
+            $("#results").append("<img src='img/frog.png' alt='Frog'>");
+        } else {
+            // If not, remove the image from the results section
+            $("#results img").remove();
+        }
     });
 
     // Toggle the "special" class on all sections when the document is ready
