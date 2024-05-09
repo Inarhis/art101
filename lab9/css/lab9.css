@@ -51,8 +51,7 @@ p {
 }
 
 .special {
-  background-color: lavender; /* Light purple background */
-  border: dotted 5px red; /* Red dotted border */
-  color: #800080; /* Purple text */
-  font-weight: bold; /* Bold font */
+  background-color: rgb(255, 255, 255);
+  color: #ffffff;
+  font-weight: bold;
 }
