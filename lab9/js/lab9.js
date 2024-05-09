@@ -9,7 +9,7 @@
 
 $(document).ready(function() {
     // Add buttons to challenge, problems, reflection, and results sections
-    $("#challenge").toggle("<button id='button-challenge'>Make Special</button>");
+    $("#challenge").append("<button id='button-challenge'>Make Special</button>");
     $("#problems").append("<button id='button-problems'>Make Special</button>");
     $("#reflection").append("<button id='button-reflection'>Make Special</button>");
     $("#results").append("<button id='button-results'>Make Special</button>");
