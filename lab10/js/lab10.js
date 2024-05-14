@@ -4,7 +4,7 @@
    Requirements: jQuery must be loaded for this script to work.
 
    Author: Jianne Soto <Jiasoto@ucsc.edu>
-   Date: 2024
+   Date: May 17 2024
    License: Public Domain
 */
 
