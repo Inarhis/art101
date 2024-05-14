@@ -18,13 +18,25 @@ function generateRandomText() {
     const randStart = Math.floor(Math.random() * (text.length - randLen + 1));
     // Generate the random Lorem Ipsum-like text
     return text.slice(randStart, randStart + randLen);
-  }
-  
-  // click listener for button
-  $("#make-convo").click(function(){
-    // get new fake dialogue
-    const newText = generateRandomText();
-    // append a new div to our output div
-    $("#output").append('<div class="text"><p>' + newText + '</p></div>');
-  });
-  
+}
+
+// Click listener for button
+$("#make-convo").click(function(){
+    // Get the user input from the input field
+    const userInput = $("#user-input").val();
+
+    // Generate random Lorem Ipsum-like text
+    const randomText = generateRandomText();
+
+    // Create a new div for the user message
+    const userMessageDiv = $("<div>").addClass("sender").html("<p>" + userInput + "</p>");
+
+    // Create a new div for the random text
+    const randomTextDiv = $("<div>").addClass("receiver").html("<p>" + randomText + "</p>");
+
+    // Append the new divs to the conversation container
+    $(".conversation").append(userMessageDiv, randomTextDiv);
+
+    // Clear the input field
+    $("#user-input").val("");
+});
