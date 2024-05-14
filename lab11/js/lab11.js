@@ -1,5 +1,5 @@
 /*
-   lab.js - This simple JavaScript/jQuery script gets a value from an input field and outputs a modified version.
+   lab.js - This simple JavaScript/jQuery script gets a value from input fields and outputs a modified version.
 
    Requirements: jQuery must be loaded for this script to work.
 
@@ -14,17 +14,28 @@ function sortString(inputString) {
     return inputString.split('').sort().join('');
 }
 
+// Checks if two strings are anagrams of each other
+function isAnagram(str1, str2) {
+    // Remove non-word characters and convert to lowercase for comparison
+    const cleanStr1 = str1.replace(/[^\w]/g, '').toLowerCase();
+    const cleanStr2 = str2.replace(/[^\w]/g, '').toLowerCase();
+    
+    // Sort the characters and compare
+    return sortString(cleanStr1) === sortString(cleanStr2);
+}
+
 // Wait for the document to be fully loaded
 $(document).ready(function() {
     // click listener for button
     $("#submit").click(function(){
-        // get value of input field
-        const userName = $("#user-name").val();
+        // Get values of input fields
+        const firstName = $("#first-name").val();
+        const lastName = $("#last-name").val();
         
-        // now let's sort it
-        const userNameSorted = sortString(userName);
+        // Check if the names are anagrams
+        const result = isAnagram(firstName, lastName) ? 'Yes' : 'No';
         
-        // append a new div to our output div
-        $("#output").html('<div class="text"><p>' + userNameSorted + '</p></div>');
+        // Output the result
+        $("#output").html('<div class="text"><p>Are ' + firstName + ' and ' + lastName + ' anagrams? ' + result + '</p></div>');
     });
 });
