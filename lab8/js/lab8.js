@@ -1,4 +1,4 @@
-// Task 3: Lab 8 - Anon Functions and Callbacks
+// Lab 8 - Anon Functions and Callbacks
 // Author: Jianne Soto <Jiasoto@ucsc.edu>
 // Created: 6 May 2024
 // License: Public Domain
