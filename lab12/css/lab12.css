@@ -1,12 +1,14 @@
 body {
   font-family: 'Comic Sans MS', cursive;
-  background-color: #f0f0f0;
+  background-color: #cafcdd; /* Light green background */
+  color: #222; /* Dark text color for better readability */
   margin: 0;
   padding: 0;
+  text-align: center; /* Center align all text */
 }
 
 header {
-  background-color:#6b2e63; /* Dark pink background */
+  background-color: #2b4d38; /* Dark green background */
   color: #fff;
   padding: 20px 0;
 }
@@ -14,35 +16,39 @@ header {
 h1, h2 {
   margin: 0;
   font-size: 36px;
-  text-align: center; /* Center align heading text */
-  border-bottom: 2px solid transparent; /* Add a transparent bottom border */
+  text-align: center;
+  border-bottom: 2px solid transparent;
+  color: #fff; /* White text color */
 }
 
 section {
   margin: 20px auto;
   padding: 20px;
-  border: 2px solid #58194f; /* Pink border */
+  border: 2px solid #1b3e2c; /* Dark green border */
   border-radius: 10px;
-  background-color: #fff;
+  background-color: #3c684e; /* Dark green background */
   max-width: 800px;
-  text-align: center; /* Center align section content */
 }
 
 h2 {
-  color: #333;
+  color: #fff; /* White text color */
   padding-bottom: 10px;
   font-size: 24px;
 }
 
 p {
-  color: #666;
+  color: #ddd; /* Light gray text color */
   font-size: 18px;
 }
 
 #output {
   margin-top: 20px;
   padding: 10px;
-  border: 2px solid #58194f; /* Dark pink border */
+  border: 2px solid #1b3e2c; /* Dark green border */
   border-radius: 5px;
-  background-color: #f0f0f0;
+  background-color: #ffffff; /* White background */
+}
+
+#output p {
+  color: #000; /* Black text color */
 }
