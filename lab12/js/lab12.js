@@ -51,4 +51,5 @@ $('#button').click(function() {
     var house = sortingHat(name);
 
     // Display the result
-    $('#output').appe
+    $('#output').append('<p class="sorted">The Sorting Hat has sorted you into ' + house.name + '. ' + house.description + '</p>');
+});
