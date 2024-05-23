@@ -1,0 +1,63 @@
+body {
+  font-family: 'Comic Sans MS', cursive;
+  background-color: #f4f4f4; /* Light gray background */
+  color: #333; /* Dark text color for better readability */
+  margin: 0;
+  padding: 0;
+  text-align: center; /* Center align all text */
+}
+
+header {
+  background-color: #444; /* Dark gray background */
+  color: #fff;
+  padding: 20px 0;
+}
+
+h1 {
+  margin: 0;
+  font-size: 36px;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+section {
+  margin: 20px 0;
+  padding: 20px;
+  border: 2px solid #666; /* Dark gray border */
+  border-radius: 10px;
+  background-color: #ddd; /* Light gray background */
+  width: 80%;
+  max-width: 800px;
+}
+
+h2 {
+  color: #444; /* Dark gray text color */
+  padding-bottom: 10px;
+  font-size: 24px;
+}
+
+p {
+  color: #666; /* Medium gray text color */
+  font-size: 18px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input[type="number"], input[type="submit"] {
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 5p

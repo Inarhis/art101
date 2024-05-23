@@ -2,7 +2,7 @@
 Lab 12: Sorting Hat
 
    Author: Jianne Soto <Jiasoto@ucsc.edu>
-   Date: May 27 2024
+   Date: May 24 2024
    License: Public Domain
 */
 
