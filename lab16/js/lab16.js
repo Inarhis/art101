@@ -11,49 +11,39 @@
 
  */
 
-$(document).ready(function() {
-    let currentComic = 0;
+// Initialize comic number
+var comicNum = 1;
 
-    // Function to get comic data and update the webpage
-    function getComicData(comicNumber = '') {
-        $.ajax({
-            url: `https://xkcd.com/${comicNumber}/info.0.json`,
-            type: "GET",
-            dataType: "json",
-            success: function(data) {
-                // Store the current comic number
-                currentComic = data.num;
-
-                // Update the webpage with the comic data
-                $('#output').html(`
-                    <h2>${data.title}</h2>
-                    <img src="${data.img}" alt="${data.alt}" title="${data.alt}">
-                    <p>${data.alt}</p>
-                `);
-            },
-            error: function(jqXHR, textStatus, errorThrown) {
-                console.log("Error:", textStatus, errorThrown);
-            }
-        });
-    }
-
-    // Load the latest comic on page load
-    getComicData();
-
-    // Activate button to load the latest comic
-    $('#activate').click(function() {
-        getComicData();
-    });
-
-    // Previous button to load the previous comic
-    $('#prev').click(function() {
-        if (currentComic > 1) {
-            getComicData(currentComic - 1);
+// Function to get and display comic data
+function getAndPutData(comicNum) {
+    $.ajax({
+        url: `https://xkcd.com/${comicNum}/info.0.json`,
+        dataType: "json",
+        success: function(data) {
+            // Update webpage with comic image and title
+            $('#comic-title').text(data.title);
+            $('#comic-image').attr('src', data.img);
+        },
+        error: function(jqXHR, textStatus, errorThrown) {
+            console.log("Error:", textStatus, errorThrown);
         }
     });
+}
 
-    // Next button to load the next comic
-    $('#next').click(function() {
-        getComicData(currentComic + 1);
-    });
+// Initial call to display the first comic
+getAndPutData(comicNum);
+
+// Event listener for next button
+$('#next-button').click(function() {
+    comicNum++;
+    getAndPutData(comicNum);
+});
+
+// Event listener for previous button
+$('#prev-button').click(function() {
+    comicNum--;
+    if (comicNum < 1) {
+        comicNum = 1; // Ensure comic number doesn't go below 1
+    }
+    getAndPutData(comicNum);
 });
